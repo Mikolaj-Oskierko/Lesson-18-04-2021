@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Pseudoclasses and Elements</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+	<header class="headgrid">
+		<div class="title">
+			<h1>Pseudoclasses and Elements</h1>
+			<small>(and some grid practice)</small>
+		</div>
+		<nav>
+			<a href="">Home</a>
+			<a href="">Paragraph</a>
+			<a href="">Section</a>
+			<a href="">Footer</a>
+		</nav>
+	</header>
+	<main>
+		<section class="wrap">
+			<div class="box1">
+				<p>Elements that are dynamically populated or dependant on tree structure.
+				</p><p>You have seen this before...</p>
+				</ul>
+				<div class="marker test">a:hover{}</div>
+				<ul class="mark">
+					<li>Link</li>
+					<ul>
+						<li>:link, :visited</li>
+					</ul>
+					<li>User Action</li>
+					<ul>
+						<li>:hover, :active, :focus</li>
+					</ul>						
+					<li>Forms (interface)</li>
+					<ul>
+						<li>:enabled, :checked, :disabled</li>
+					</ul>						
+				</ul>
+			</div>			
+			<div class="box2">
+				<P>So we've been working with different types of elements throughout this entire course, and how we can structure them and style them. Well, pseudo elements are kind of different from the other things we've seen before in that they are very dependent on the DOM structure, and some of them are actually dynamically populated. So, to be honest, you have seen this before back when we talked about styling links because the links had those different states. One example we used was the idea of hover.</P>
+			</div>
+			<div class="box3">
+				<p>If you hover a link, you can change the style to get rid of maybe the underline or change the color. So, let's talk about some of these different types of pseudo-classes beyond what you can do with just a link. I started off with the one we've seen before. You can have a link and also a link that's been visited. You can also react to different user actions.</p>
+				<p>So, if someone's hovering over a paragraph or hovering over an H1 tag, you can still react to it. It doesn't just have to be a link. You can also have active, and active is when you're holding the mouse button down over some sort of element. And the last one is focus.</P>
+			</div>
+			<div class="box4">
+				<p>Focus would be when someone's tabbing through the page you can put focus down on each one of these. Finally, one that makes a lot of sense and you've probably seen before is that you can dial the pseudo-classes of forms or interfaces. If the check box has been clicked or checked off, you can see that sometimes they make it yellow. </p>
+				<p>Or if you've ever been to a site and you're not allowed to type something in until you type something in a box above, higher in, they tend to gray it out. So the way you would go ahead and do this is you could say, you know what? If someone hovers over my paragraph, I want to just do a border. Border:1 px. Now, even though there's no place on the DOM where they have p:hover, it should work for you when you put that styling rule in.</p>
+			</div>
+			<div class="box5">
+				<h2>Types of Pseudo-Classes</h2>
+				<ul class="mark">
+					<li>Structural/Positional</li>
+					<ul>
+						<li>:first-child,</li>
+						<li>:last-child,</li>
+						<li>:nth-child(),</li>
+						<li>:only-child</li>
+						<li>:first-f-type,</li>
+						<li>:last-of-type,</li>
+						<li>:only-of-type</li>
+					</ul>					
+				</ul>
+				<div class="test">
+					<ul class="marker test">
+						<li>li:first-child{}</li>
+						<li>li:nth-child(4){}</li>
+						<li>p:empty{}</li>
+						<li>img:only-of-type{}</li>
+						<li>p:last-of-type{}</li>
+					</ul>	
+				</div>
+			</div>
+			<div class="box6"></div>
+		</section>
+	</main>
+	<footer>
+		<nav>
+			<a href="">Home</a>
+			<a href="">Paragraph</a>
+			<a href="">Section</a>
+			<a href="">Footer</a>
+		</nav>
+	</footer>
+</body>
+</html>
